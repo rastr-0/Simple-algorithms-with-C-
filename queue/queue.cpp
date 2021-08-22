@@ -68,6 +68,7 @@ int main() {
 			long num;
 			std::cin >> num;
 			first.push(num);
+			std::cin.clear();
 		}
 		else if (str == "pop") {
 			std::cout << first.pop() << std::endl;
