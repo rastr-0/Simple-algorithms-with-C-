@@ -128,4 +128,5 @@ Node* Binary_tree::search(int key, Node* leaf) {
 }
 int main()
 {
+
 }
