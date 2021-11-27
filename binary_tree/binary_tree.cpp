@@ -23,6 +23,7 @@ private:
 	void inorder_print(Node* leaf);
 	void preorder_print(Node* leaf);
 	void postorder_print(Node* leaf);
+	Node* search(int key, Node* leaf);
 public:
 	Binary_tree();
 	void insert(int key);
@@ -30,10 +31,14 @@ public:
 	void inorder_print();
 	void preorder_print();
 	void postorder_print();
+	Node* search(int key);
 };
 // public functions
 Binary_tree::Binary_tree() {
 	root = nullptr;
+}
+Node* Binary_tree::search(int key) {
+	return search(key, root);
 }
 void Binary_tree::insert(int key) {
 	if (root != nullptr)
@@ -109,6 +114,19 @@ void Binary_tree::postorder_print(Node* leaf) {
 		std::cout << leaf->data;
 	}
 }
+Node* Binary_tree::search(int key, Node* leaf) {
+	if (leaf != nullptr) {
+		if (leaf->data == key)
+			return leaf;
+		else if (key > leaf->data)
+			return search(key, leaf->right);
+		else
+			return search(key, leaf->left);
+	}
+	else
+		return nullptr; // there are no elements in Binary_tree
+}
 int main()
 {
+
 }
