@@ -17,4 +17,4 @@ int main(){
     long x, y, n;
     std::cin >> x >> y >> n;
     std::cout << pow_mod(x, y, n);
-}S
+}
