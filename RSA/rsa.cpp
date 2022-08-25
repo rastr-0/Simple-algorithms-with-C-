@@ -1,7 +1,7 @@
 /*
 This is an example of RSA realisation.
 In this code I do not use libraries for big numbers.
-But functions disegned in a good way to work with big numbers.
+But functions designed in a good way to work with big numbers.
 */
 
 // should be compiled with c++17
