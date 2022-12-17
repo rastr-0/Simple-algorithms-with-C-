@@ -20,9 +20,10 @@ public:
                 break;
             }
         }
-        if (!key_exists)
+        if (!key_exists){
             std::cout << "Key was inserted" << std::endl;
             cell.emplace_back(key, value);
+        }
     };
     void remove_item(const int key){
         int hash_value = hash_function(key);
