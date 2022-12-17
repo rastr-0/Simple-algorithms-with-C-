@@ -24,7 +24,7 @@ public:
             std::cout << "Key was inserted" << std::endl;
             cell.emplace_back(key, value);
         }
-    };
+    }
     void remove_item(const int key){
         int hash_value = hash_function(key);
         auto& cell = table[hash_value];
@@ -49,7 +49,7 @@ public:
                 return false;
         }
         return true;
-    };
+    }
     const int hash_function(const int key){
         // distribute numbers by last value of number:
         // 101 => 1; 607 => 7
