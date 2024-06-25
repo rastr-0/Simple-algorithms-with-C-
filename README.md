@@ -1,7 +1,5 @@
-Hello everyone!
-In this repository I collected different simple algorithms.
-This list will be maintained and supplemented by me.
-
-Contacts:
-	 e-mail: romanmilko123@gmail.com	
-	 Telegram: @RomanMilko
+Hi everyone!
+In this repository I collect different simple algorithms written in C++.
+TODO:
+  * add short description for each implemented algorithm here
+  * re-write code with best practices
